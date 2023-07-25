@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: fixed;
+}
+.heropage {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 2px;
+    align-items: center;
+    margin-top: 55px;
+}
+@media (max-width: 750px) 
+{
+    .heropage {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+    }
+    .carouselslide {
+        width: 70%;
+    }
+}
+.animation img {
+    width: 200px;
+    position: absolute;
+}
+.animationa {
+    padding: 10px 0;
+    animation-name: vehicle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.animationb {
+    padding: 10px 0;
+    animation-name: vehicle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes vehicle {
+    0% {
+    transform: translateX(0px)
+    }
+    100% {
+    transform: translateX(800px)
+    }
+}
+footer {
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
