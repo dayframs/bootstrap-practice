@@ -6,6 +6,9 @@
 .navbar {
     position: fixed;
 }
+nav img {
+    width: 100px;
+}
 .heropage {
     display: grid;
     grid-template-columns: 1fr 400px;
@@ -26,9 +29,10 @@
 }
 .animation img {
     width: 200px;
-    position: absolute;
+    overflow-x: hidden;
 }
 .animationa {
+    overflow-x: hidden;
     padding: 10px 0;
     animation-name: vehicle;
     animation-duration: 4s;
@@ -38,21 +42,22 @@
 .animationb {
     padding: 10px 0;
     animation-name: vehicle;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
 }
 @keyframes vehicle {
     0% {
-    transform: translateX(0px)
+    transform: translateX(-450px)
     }
     100% {
-    transform: translateX(800px)
+    transform: translateX(700px)
     }
 }
 footer {
-    padding: 10px 50px;
+    padding: 20px 50px;
     text-align: center;
     color: white;
     background-color: black;
+    font-size: 12px;
 }
