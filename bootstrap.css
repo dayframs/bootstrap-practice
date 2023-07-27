@@ -14,7 +14,7 @@ nav img {
     grid-template-columns: 1fr 400px;
     gap: 2px;
     align-items: center;
-    margin-top: 55px;
+    margin-top: 150px;
 }
 @media (max-width: 750px) 
 {
@@ -22,6 +22,7 @@ nav img {
     display: flex;
     flex-direction: column-reverse;
     gap: 0;
+    margin-top: 150px;
     }
     .carouselslide {
         width: 70%;
