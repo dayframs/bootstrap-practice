@@ -16,18 +16,6 @@ nav img {
     align-items: center;
     margin-top: 150px;
 }
-@media (max-width: 750px) 
-{
-    .heropage {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0;
-    margin-top: 150px;
-    }
-    .carouselslide {
-        width: 70%;
-    }
-}
 .animation img {
     width: 200px;
     overflow-x: hidden;
